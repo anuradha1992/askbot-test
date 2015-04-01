@@ -1,6 +1,4 @@
-source ${OPENSHIFT_HOMEDIR}python-2.7/virtenv/bin/activate
- 
-export PYTHON_EGG_CACHE=${OPENSHIFT_HOME_DIR}python-2.7/virtenv/lib/python-2.7/site-packages
+source $OPENSHIFT_HOMEDIR/python-2.7/virtenv/bin/activate
  
 python "$OPENSHIFT_REPO_DIR"wsgi/askbot_devel/manage.py syncdb --noinput
 
